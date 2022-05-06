@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f581936bceec2e06b0096e3528050701f80597bb8a43eb78be3bc57b922f417d"
+            "sha256": "f1a4cf702dd32cecd7fbae97e6942d67cbd23be4806e4369ac914a2578929257"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,6 +31,10 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==4.33.3"
+        },
+        "fuzzython": {
+            "git": "https://github.com/yudivian/fuzzython.git",
+            "ref": "9650204539dd7a36bfb6a96d7556402a0bc7c998"
         },
         "kiwisolver": {
             "hashes": [
@@ -119,7 +123,7 @@
                 "sha256:ee0b8e586ac07f83bb2950717e66cb305e2859baf6f00a9c39cc576e0ce9629c",
                 "sha256:ee175a571e692fc8ae8e41ac353c0e07259113f4cb063b0ec769eff9717e84bb"
             ],
-            "markers": "python_version >= '3.7'",
+            "index": "pypi",
             "version": "==3.5.2"
         },
         "numpy": {
@@ -145,7 +149,7 @@
                 "sha256:fade0d4f4d292b6f39951b6836d7a3c7ef5b2347f3c420cd9820a1d90d794802",
                 "sha256:fdf3c08bce27132395d3c3ba1503cac12e17282358cb4bddc25cc46b0aca07aa"
             ],
-            "markers": "python_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64'",
+            "markers": "python_version >= '3.8'",
             "version": "==1.22.3"
         },
         "packaging": {

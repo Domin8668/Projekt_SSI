@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pandas = "*"
 seaborn = "*"
+matplotlib = "*"
+fuzzython = {git = "https://github.com/yudivian/fuzzython.git"}
 
 [dev-packages]
 
