@@ -38,10 +38,9 @@ class Fuzzy:
                 if i[j[0]] == j[1]:
                     tmp *= j[2]
             rules_result.append(tmp)
-        print('rulesResult:', rules_result)
+        print('rules_result:', rules_result)
         # wyostrzenie
         res = max(rules_result)
-        decision = ''
         decision = self.rules[rules_result.index(res)]['jakosc zycia']
         print("W miescie", sample['miasto'], "jakosc zycia jest", decision)
         print()
