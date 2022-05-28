@@ -1,3 +1,6 @@
+from pprint import pprint
+
+
 class Fuzzy:
     def __init__(self):
         self.antecedent = []
@@ -29,14 +32,17 @@ class Fuzzy:
         fuzzy_values = []
         for i in self.antecedent:
             fuzzy_values.append([i[0], i[1], self.triangular_function(x[i[0]], i[2], i[3], i[4])])
+        pprint(fuzzy_values)
 
         # wnioskowanie
         rules_result = []
         for i in self.rules:
             tmp = 1
             for j in fuzzy_values:
+                # print(f'{i[j[0]]=}; {j[0]=}; {j[1]=}; {j[2]=}')
                 if i[j[0]] == j[1]:
                     tmp *= j[2]
+                    print(f'{i[j[0]]=}; {j[0]=}; {j[1]=}; {j[2]=}; {tmp=}')
             rules_result.append(tmp)
         print('rules_result:', rules_result)
         # wyostrzenie
@@ -68,8 +74,10 @@ system.add_rule({'naslonecznienie': 'srednie', 'skazenie': 'niskie', 'jakosc zyc
 system.add_rule({'naslonecznienie': 'dobre', 'skazenie': 'srednie', 'jakosc zycia': 'dobra'})
 system.add_rule({'naslonecznienie': 'dobre', 'skazenie': 'niskie', 'jakosc zycia': 'dobra'})
 
-miasta = [{'naslonecznienie': 0.6, 'skazenie': 0.3, 'miasto': 'Warszawa'},
-          {'naslonecznienie': 1.0, 'skazenie': 0.1, 'miasto': 'Krakow'}]
+# miasta = [{'naslonecznienie': 0.6, 'skazenie': 0.3, 'miasto': 'Warszawa'},
+#           {'naslonecznienie': 1.0, 'skazenie': 0.1, 'miasto': 'Krakow'}]
+
+miasta = [{'naslonecznienie': 1.0, 'skazenie': 0.1, 'miasto': 'Krakow'}]
 
 for sample in miasta:
     print(sample)
