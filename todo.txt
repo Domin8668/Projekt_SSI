@@ -1,7 +1,0 @@
-- pokomentowac rozmyty (w sumie ot juz niby jest)
-- prezka
-- ss SSCMean do dokumentacji
-- ss SSCPercentage do dokumentacji
-- aktualizacja kodu w dokumentacji
-- wzory do fuzzy w dokumentacji
-- metryka
